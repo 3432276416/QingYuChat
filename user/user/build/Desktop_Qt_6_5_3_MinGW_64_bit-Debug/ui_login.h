@@ -38,7 +38,7 @@ public:
     QSpacerItem *horizontalSpacer_2;
     QWidget *widget2;
     QVBoxLayout *verticalLayout;
-    QLineEdit *line_password_2;
+    QLineEdit *line_userName;
     QLineEdit *line_password;
     QHBoxLayout *horizontalLayout_3;
     QCheckBox *ckb_rememberPwd;
@@ -118,25 +118,44 @@ public:
         verticalLayout = new QVBoxLayout(widget2);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        line_password_2 = new QLineEdit(widget2);
-        line_password_2->setObjectName("line_password_2");
-        line_password_2->setMinimumSize(QSize(287, 37));
-        line_password_2->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
+        line_userName = new QLineEdit(widget2);
+        line_userName->setObjectName("line_userName");
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(line_userName->sizePolicy().hasHeightForWidth());
+        line_userName->setSizePolicy(sizePolicy);
+        line_userName->setMinimumSize(QSize(287, 37));
+        line_userName->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
 "border: 1px solid rgba(0, 0, 0, 0.3);\n"
 "border-radius: 10px;\n"
 "color:grey;\n"
 ""));
+        line_userName->setMaxLength(12);
+        line_userName->setAlignment(Qt::AlignCenter);
+        line_userName->setCursorMoveStyle(Qt::VisualMoveStyle);
 
-        verticalLayout->addWidget(line_password_2);
+        verticalLayout->addWidget(line_userName);
 
         line_password = new QLineEdit(widget2);
         line_password->setObjectName("line_password");
+        sizePolicy.setHeightForWidth(line_password->sizePolicy().hasHeightForWidth());
+        line_password->setSizePolicy(sizePolicy);
         line_password->setMinimumSize(QSize(287, 37));
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
+        font1.setPointSize(12);
+        font1.setBold(false);
+        font1.setItalic(false);
+        line_password->setFont(font1);
         line_password->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
 "border: 1px solid rgba(0, 0, 0, 0.3);\n"
 "border-radius: 10px;\n"
 "color:grey;\n"
 ""));
+        line_password->setMaxLength(12);
+        line_password->setAlignment(Qt::AlignCenter);
+        line_password->setCursorMoveStyle(Qt::VisualMoveStyle);
 
         verticalLayout->addWidget(line_password);
 
@@ -144,11 +163,11 @@ public:
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         ckb_rememberPwd = new QCheckBox(widget2);
         ckb_rememberPwd->setObjectName("ckb_rememberPwd");
-        QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(ckb_rememberPwd->sizePolicy().hasHeightForWidth());
-        ckb_rememberPwd->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Maximum, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(ckb_rememberPwd->sizePolicy().hasHeightForWidth());
+        ckb_rememberPwd->setSizePolicy(sizePolicy1);
         ckb_rememberPwd->setLayoutDirection(Qt::LeftToRight);
         ckb_rememberPwd->setStyleSheet(QString::fromUtf8(" color: gray;\n"
 ""));
@@ -157,8 +176,8 @@ public:
 
         ckb_autoLogin = new QCheckBox(widget2);
         ckb_autoLogin->setObjectName("ckb_autoLogin");
-        sizePolicy.setHeightForWidth(ckb_autoLogin->sizePolicy().hasHeightForWidth());
-        ckb_autoLogin->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(ckb_autoLogin->sizePolicy().hasHeightForWidth());
+        ckb_autoLogin->setSizePolicy(sizePolicy1);
         ckb_autoLogin->setStyleSheet(QString::fromUtf8(" color: gray;\n"
 ""));
 
@@ -166,8 +185,8 @@ public:
 
         pushButton_3 = new QPushButton(widget2);
         pushButton_3->setObjectName("pushButton_3");
-        sizePolicy.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
-        pushButton_3->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
+        pushButton_3->setSizePolicy(sizePolicy1);
         pushButton_3->setStyleSheet(QString::fromUtf8(" QPushButton {\n"
 "       font: 10pt \"Microsoft YaHei UI\";\n"
 "       border: none;\n"
@@ -199,14 +218,14 @@ public:
         pushButton = new QPushButton(widget3);
         pushButton->setObjectName("pushButton");
         pushButton->setMinimumSize(QSize(0, 20));
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
-        font1.setPointSize(10);
-        font1.setBold(false);
-        font1.setItalic(false);
-        font1.setUnderline(false);
-        font1.setStrikeOut(false);
-        pushButton->setFont(font1);
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
+        font2.setPointSize(10);
+        font2.setBold(false);
+        font2.setItalic(false);
+        font2.setUnderline(false);
+        font2.setStrikeOut(false);
+        pushButton->setFont(font2);
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "       font: 10pt \"Microsoft YaHei UI\";\n"
 "       border: none;\n"
@@ -234,7 +253,7 @@ public:
         lab_avator->setText(QString());
         lab_appText->setText(QCoreApplication::translate("Login", "\350\275\273\350\257\255", nullptr));
         label->setText(QString());
-        line_password_2->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\350\264\246\345\217\267", nullptr));
+        line_userName->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\350\264\246\345\217\267", nullptr));
         line_password->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\345\257\206\347\240\201", nullptr));
         ckb_rememberPwd->setText(QCoreApplication::translate("Login", "\350\256\260\344\275\217\345\257\206\347\240\201", nullptr));
         ckb_autoLogin->setText(QCoreApplication::translate("Login", "\350\207\252\345\212\250\347\231\273\345\275\225", nullptr));
