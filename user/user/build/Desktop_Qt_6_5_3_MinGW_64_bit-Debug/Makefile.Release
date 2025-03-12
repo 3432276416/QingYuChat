@@ -85,7 +85,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) user.zip $(SOURCES) $(DIST) ..\..\..\..\user.pro D:\Software\QT\6.5.3\mingw_64\mkspecs\features\spec_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\device_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\sanitize.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\gcc-base.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\g++-base.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\windows-vulkan.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\g++-win32.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\windows-desktop.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\qconfig.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_freetype.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_libpng.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3danimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3danimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dcore.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dcore_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dextras.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dextras_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dinput.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dinput_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dlogic.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dlogic_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3drender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3drender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_activeqt.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_activeqt_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axbase_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axcontainer.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axcontainer_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axserver.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bluetooth.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bluetooth_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bodymovin_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_charts.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_charts_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_concurrent.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core5compat.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualization.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualization_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_dbus.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designer.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designer_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_grpc.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_grpc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_gui.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_gui_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_help.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_help_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_httpserver.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_httpserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttracker.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttracker_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_jsonrpc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssettings.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_languageserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_linguist.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_location.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_location_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimedia.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_network.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_network_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_networkauth.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_networkauth_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_nfc.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_nfc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_opengl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_png_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioning.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioning_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioningquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioningquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_printsupport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_protobuf.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_protobuf_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltest.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3d.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_repparser.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_repparser_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensors.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensors_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialbus.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialbus_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_shadertools.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sql.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sql_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachine.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachine_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svg.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svg_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_testlib.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_texttospeech.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_texttospeech_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_tools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uitools.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webchannel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webchannel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_websockets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_websockets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webview.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webview_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webviewquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webviewquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_widgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_xml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_xml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt_functions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\win32-g++\qmake.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\spec_post.prf .qmake.stash D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exclusive_builds.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\toolchain.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\default_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\default_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resolve_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exclusive_builds_post.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\default_post.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\build_pass.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qml_debug.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\entrypoint.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\precompile_header.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\warn_on.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resources_functions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resources.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\moc.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\opengl.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\uic.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qmake_use.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\file_copies.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\windows.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\testcase_targets.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exceptions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\yacc.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\lex.prf ..\..\user.pro ..\..\res.qrc D:\Software\QT\6.5.3\mingw_64\lib\Qt6Widgets.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Gui.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Network.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Sql.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Core.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6EntryPoint.prl   ..\..\res.qrc D:\Software\QT\6.5.3\mingw_64\mkspecs\features\data\dummy.cpp ..\..\login.h ..\..\mainwindow.h  ..\..\login.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\login.ui ..\..\mainwindow.ui    
+	$(ZIP) user.zip $(SOURCES) $(DIST) ..\..\..\..\user.pro D:\Software\QT\6.5.3\mingw_64\mkspecs\features\spec_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\device_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\sanitize.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\gcc-base.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\g++-base.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\windows-vulkan.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\g++-win32.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\common\windows-desktop.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\qconfig.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_freetype.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_ext_libpng.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3danimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3danimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dcore.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dcore_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dextras.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dextras_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dinput.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dinput_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dlogic.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dlogic_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickextras_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickinput_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickrender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3drender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_3drender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_activeqt.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_activeqt_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axbase_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axcontainer.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axcontainer_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axserver.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_axserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bluetooth.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bluetooth_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_bodymovin_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_charts.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_charts_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_concurrent.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core5compat.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_core_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualization.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualization_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_datavisualizationqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_dbus.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designer.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designer_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_grpc.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_grpc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_gui.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_gui_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_help.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_help_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_httpserver.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_httpserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttracker.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttracker_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_jsonrpc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssettings.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_languageserver_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_linguist.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_location.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_location_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimedia.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_network.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_network_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_networkauth.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_networkauth_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_nfc.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_nfc_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_opengl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_png_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioning.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioning_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioningquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_positioningquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_printsupport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_protobuf.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_protobuf_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltest.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3d.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysics_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dphysicshelpers_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjects_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_remoteobjectsqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_repparser.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_repparser_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_scxmlqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensors.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensors_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sensorsquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialbus.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialbus_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialport.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_serialport_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_shadertools.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sql.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_sql_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachine.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachine_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_statemachineqml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svg.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svg_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_testlib.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_texttospeech.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_texttospeech_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_tools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uitools.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webchannel.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webchannel_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_websockets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_websockets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webview.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webview_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webviewquick.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_webviewquick_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_widgets.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_xml.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_xml_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt_functions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\win32-g++\qmake.conf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\spec_post.prf .qmake.stash D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exclusive_builds.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\toolchain.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\default_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\default_pre.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resolve_config.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exclusive_builds_post.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\default_post.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\build_pass.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qml_debug.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\entrypoint.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\precompile_header.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\warn_on.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qt.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resources_functions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\resources.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\moc.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\opengl.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\uic.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\qmake_use.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\file_copies.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\win32\windows.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\testcase_targets.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\exceptions.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\yacc.prf D:\Software\QT\6.5.3\mingw_64\mkspecs\features\lex.prf ..\..\user.pro ..\..\res\res.qrc D:\Software\QT\6.5.3\mingw_64\lib\Qt6Widgets.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Gui.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Network.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Sql.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6Core.prl D:\Software\QT\6.5.3\mingw_64\lib\Qt6EntryPoint.prl   ..\..\res\res.qrc D:\Software\QT\6.5.3\mingw_64\mkspecs\features\data\dummy.cpp ..\..\login.h ..\..\mainwindow.h  ..\..\login.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\login.ui ..\..\mainwindow.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\login.o release\main.o release\mainwindow.o release\qrc_res.o release\moc_login.o release\moc_mainwindow.o
@@ -108,16 +108,10 @@ compiler_no_pch_compiler_clean:
 compiler_rcc_make_all: release/qrc_res.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_res.cpp
-release/qrc_res.cpp: ../../res.qrc \
+release/qrc_res.cpp: ../../res/res.qrc \
 		D:/Software/QT/6.5.3/mingw_64/bin/rcc.exe \
-		../../Resources/icon/cps_apps.png \
-		../../Resources/background/bg_white.png \
-		../../Resources/background/bg_cloud.png \
-		../../Resources/background/bg_pinkwhite.png \
-		../../Resources/background/bg_pinkcloud.png \
-		../../Resources/background/loginBG.png \
-		../../Resources/background/bg_blue.png
-	D:\Software\QT\6.5.3\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res.qrc -o release\qrc_res.cpp
+		../../res/background/bg_cloud.png
+	D:\Software\QT\6.5.3\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res\res.qrc -o release\qrc_res.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
 compiler_moc_predefs_clean:
@@ -129,8 +123,8 @@ compiler_moc_header_make_all: release/moc_login.cpp release/moc_mainwindow.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_login.cpp release\moc_mainwindow.cpp
 release/moc_login.cpp: ../../login.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qglobal.h \
@@ -179,6 +173,7 @@ release/moc_login.cpp: ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtguiexports.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qobjectdefs.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qnamespace.h \
@@ -286,26 +281,72 @@ release/moc_login.cpp: ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QTransform \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QValidator \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qgraphicseffect.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QPropertyAnimation \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpropertyanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qvariantanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qabstractanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeasingcurve.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/QTcpSocket \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonDocument \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsondocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborcommon.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/quuid.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonObject \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonobject.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QByteArray \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QRegularExpressionValidator \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QRegularExpression \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QIcon \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QDir \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdir.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfile.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfiledevice.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfileinfo.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBrush \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QTimer \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qbasictimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QLinearGradient \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QStandardPaths \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qstandardpaths.h \
 		release/moc_predefs.h \
 		D:/Software/QT/6.5.3/mingw_64/bin/moc.exe
 	D:\Software\QT\6.5.3\mingw_64\bin\moc.exe $(DEFINES) --include E:/GitStore/QingYuChat/user/user/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Software/QT/6.5.3/mingw_64/mkspecs/win32-g++ -IE:/GitStore/QingYuChat/user/user -ID:/Software/QT/6.5.3/mingw_64/include -ID:/Software/QT/6.5.3/mingw_64/include/QtWidgets -ID:/Software/QT/6.5.3/mingw_64/include/QtGui -ID:/Software/QT/6.5.3/mingw_64/include/QtNetwork -ID:/Software/QT/6.5.3/mingw_64/include/QtSql -ID:/Software/QT/6.5.3/mingw_64/include/QtCore -I. -ID:/Software/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Software/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Software/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Software/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Software/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Software/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\login.h -o release\moc_login.cpp
@@ -502,8 +543,8 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 release/login.o: ../../login.cpp ../../login.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qglobal.h \
@@ -552,6 +593,7 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtguiexports.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qwidget.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qobjectdefs.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qnamespace.h \
@@ -659,26 +701,72 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSizeF \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QTransform \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QValidator \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qgraphicseffect.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QPropertyAnimation \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpropertyanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qvariantanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qabstractanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeasingcurve.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/QTcpSocket \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonDocument \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsondocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborcommon.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/quuid.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonObject \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonobject.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QByteArray \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QRegularExpressionValidator \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QRegularExpression \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QIcon \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QDir \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdir.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfile.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfiledevice.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfileinfo.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBrush \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QTimer \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qbasictimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QLinearGradient \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QStandardPaths \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qstandardpaths.h \
 		ui_login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QVariant \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
@@ -716,7 +804,8 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\login.o ..\..\login.cpp
 
 release/main.o: ../../main.cpp ../../mainwindow.h \
@@ -880,27 +969,71 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../login.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QWidget \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QValidator \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qgraphicseffect.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QPropertyAnimation \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpropertyanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qvariantanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qabstractanimation.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeasingcurve.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/QTcpSocket \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonDocument \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsondocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborvalue.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcalendar.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qlocale.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QDialog \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcborcommon.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/quuid.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QJsonObject \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qjsonobject.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QByteArray \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QRegularExpressionValidator \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qvalidator.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QRegularExpression \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QIcon \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QDir \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdir.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfile.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfiledevice.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfileinfo.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBrush \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QTimer \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qbasictimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QLinearGradient \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QStandardPaths \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qstandardpaths.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \

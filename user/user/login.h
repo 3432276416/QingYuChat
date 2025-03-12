@@ -1,14 +1,32 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include <QWidget>
-#include <QValidator>
-#include <QDialog>
-#include <QPainter>
-#include <QPainterPath>
-#include <QMouseEvent>
+#include <QMainWindow>
+#include <QGraphicsOpacityEffect>
+#include <QPropertyAnimation>
+#include <QTcpSocket>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QByteArray>
+#include <QRegularExpressionValidator>
 #include <QRegularExpression>
+#include <QFocusEvent>
+#include <QKeyEvent>
+#include <QMouseEvent>
 #include <QLineEdit>
+#include <QFocusEvent>
+#include <QSettings>
+#include <QMessageBox>
+#include <QStyle>
+#include <QPixmap>
+#include <QPainter>
+#include <QBitmap>
+#include <QIcon>
+#include<QDir>
+#include <QBrush>
+#include <QTimer>
+#include <QLinearGradient>
+#include <QStandardPaths>
 
 namespace Ui {
 class Login;
@@ -25,11 +43,11 @@ public:
     QPoint dragPosition;
     QValidator *validator;
 
-
-private:
-    Ui::Login *ui;
+public:
+     void InitView();
     void setBackGround();
     void setAva();//初始化头像
+    void setPwdLineEdit();
     // void setIcon();//初始化左上角图标
     // void setVal();//设置输入验证器
     // void setTimer();//设置一些计时器 用于动态背景与动态按钮
@@ -44,6 +62,12 @@ private:
     // void saveAvator(QString avator);//保存头像
     // void loginFail();//登录失败
     // void loginSuccess();//登录失败
+
+
+private:
+    Ui::Login *ui;
+    QString saveAvatorPath; //存放保存头像路径
+
 };
 
 #endif // LOGIN_H

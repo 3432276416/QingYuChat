@@ -41,7 +41,7 @@
     <string>登录</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -52,7 +52,7 @@
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QLabel" name="lab_avator">
+     <widget class="QLabel" name="lab_tubiao">
       <property name="minimumSize">
        <size>
         <width>30</width>
@@ -91,7 +91,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -115,7 +115,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="lab_ava">
       <property name="minimumSize">
        <size>
         <width>100</width>
@@ -147,7 +147,7 @@ border-radius: 8px;
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -158,7 +158,7 @@ border-radius: 8px;
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLineEdit" name="line_userName">
+     <widget class="QLineEdit" name="userName_lineEdit">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -193,7 +193,7 @@ color:grey;
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="line_password">
+     <widget class="QLineEdit" name="password_lineEdit">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -305,7 +305,7 @@ color:grey;
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>

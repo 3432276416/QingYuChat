@@ -26,25 +26,25 @@ class Ui_Login
 {
 public:
     QPushButton *pushButton_2;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
-    QLabel *lab_avator;
+    QLabel *lab_tubiao;
     QLabel *lab_appText;
     QSpacerItem *horizontalSpacer;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_3;
-    QLabel *label;
+    QLabel *lab_ava;
     QSpacerItem *horizontalSpacer_2;
-    QWidget *widget2;
+    QWidget *layoutWidget2;
     QVBoxLayout *verticalLayout;
-    QLineEdit *line_userName;
-    QLineEdit *line_password;
+    QLineEdit *userName_lineEdit;
+    QLineEdit *password_lineEdit;
     QHBoxLayout *horizontalLayout_3;
     QCheckBox *ckb_rememberPwd;
     QCheckBox *ckb_autoLogin;
     QPushButton *pushButton_3;
-    QWidget *widget3;
+    QWidget *layoutWidget3;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer;
     QPushButton *pushButton;
@@ -65,19 +65,19 @@ public:
 "    border-radius: 15px;\n"
 "}\n"
 ""));
-        widget = new QWidget(Login);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(20, 10, 391, 41));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(Login);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(20, 10, 391, 41));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        lab_avator = new QLabel(widget);
-        lab_avator->setObjectName("lab_avator");
-        lab_avator->setMinimumSize(QSize(30, 30));
+        lab_tubiao = new QLabel(layoutWidget);
+        lab_tubiao->setObjectName("lab_tubiao");
+        lab_tubiao->setMinimumSize(QSize(30, 30));
 
-        horizontalLayout->addWidget(lab_avator);
+        horizontalLayout->addWidget(lab_tubiao);
 
-        lab_appText = new QLabel(widget);
+        lab_appText = new QLabel(layoutWidget);
         lab_appText->setObjectName("lab_appText");
         QFont font;
         font.setPointSize(12);
@@ -89,79 +89,79 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        widget1 = new QWidget(Login);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(80, 50, 301, 102));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(Login);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(80, 50, 301, 102));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         horizontalSpacer_3 = new QSpacerItem(30, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_3);
 
-        label = new QLabel(widget1);
-        label->setObjectName("label");
-        label->setMinimumSize(QSize(100, 100));
-        label->setStyleSheet(QString::fromUtf8("border: 3px solid black;\n"
+        lab_ava = new QLabel(layoutWidget1);
+        lab_ava->setObjectName("lab_ava");
+        lab_ava->setMinimumSize(QSize(100, 100));
+        lab_ava->setStyleSheet(QString::fromUtf8("border: 3px solid black;\n"
 "border-radius: 8px;\n"
 ""));
 
-        horizontalLayout_2->addWidget(label);
+        horizontalLayout_2->addWidget(lab_ava);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_2);
 
-        widget2 = new QWidget(Login);
-        widget2->setObjectName("widget2");
-        widget2->setGeometry(QRect(80, 160, 301, 121));
-        verticalLayout = new QVBoxLayout(widget2);
+        layoutWidget2 = new QWidget(Login);
+        layoutWidget2->setObjectName("layoutWidget2");
+        layoutWidget2->setGeometry(QRect(80, 160, 301, 121));
+        verticalLayout = new QVBoxLayout(layoutWidget2);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        line_userName = new QLineEdit(widget2);
-        line_userName->setObjectName("line_userName");
+        userName_lineEdit = new QLineEdit(layoutWidget2);
+        userName_lineEdit->setObjectName("userName_lineEdit");
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(line_userName->sizePolicy().hasHeightForWidth());
-        line_userName->setSizePolicy(sizePolicy);
-        line_userName->setMinimumSize(QSize(287, 37));
-        line_userName->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
+        sizePolicy.setHeightForWidth(userName_lineEdit->sizePolicy().hasHeightForWidth());
+        userName_lineEdit->setSizePolicy(sizePolicy);
+        userName_lineEdit->setMinimumSize(QSize(287, 37));
+        userName_lineEdit->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
 "border: 1px solid rgba(0, 0, 0, 0.3);\n"
 "border-radius: 10px;\n"
 "color:grey;\n"
 ""));
-        line_userName->setMaxLength(12);
-        line_userName->setAlignment(Qt::AlignCenter);
-        line_userName->setCursorMoveStyle(Qt::VisualMoveStyle);
+        userName_lineEdit->setMaxLength(12);
+        userName_lineEdit->setAlignment(Qt::AlignCenter);
+        userName_lineEdit->setCursorMoveStyle(Qt::VisualMoveStyle);
 
-        verticalLayout->addWidget(line_userName);
+        verticalLayout->addWidget(userName_lineEdit);
 
-        line_password = new QLineEdit(widget2);
-        line_password->setObjectName("line_password");
-        sizePolicy.setHeightForWidth(line_password->sizePolicy().hasHeightForWidth());
-        line_password->setSizePolicy(sizePolicy);
-        line_password->setMinimumSize(QSize(287, 37));
+        password_lineEdit = new QLineEdit(layoutWidget2);
+        password_lineEdit->setObjectName("password_lineEdit");
+        sizePolicy.setHeightForWidth(password_lineEdit->sizePolicy().hasHeightForWidth());
+        password_lineEdit->setSizePolicy(sizePolicy);
+        password_lineEdit->setMinimumSize(QSize(287, 37));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
         font1.setPointSize(12);
         font1.setBold(false);
         font1.setItalic(false);
-        line_password->setFont(font1);
-        line_password->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
+        password_lineEdit->setFont(font1);
+        password_lineEdit->setStyleSheet(QString::fromUtf8("font: 12pt \"Microsoft YaHei UI\";\n"
 "border: 1px solid rgba(0, 0, 0, 0.3);\n"
 "border-radius: 10px;\n"
 "color:grey;\n"
 ""));
-        line_password->setMaxLength(12);
-        line_password->setAlignment(Qt::AlignCenter);
-        line_password->setCursorMoveStyle(Qt::VisualMoveStyle);
+        password_lineEdit->setMaxLength(12);
+        password_lineEdit->setAlignment(Qt::AlignCenter);
+        password_lineEdit->setCursorMoveStyle(Qt::VisualMoveStyle);
 
-        verticalLayout->addWidget(line_password);
+        verticalLayout->addWidget(password_lineEdit);
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        ckb_rememberPwd = new QCheckBox(widget2);
+        ckb_rememberPwd = new QCheckBox(layoutWidget2);
         ckb_rememberPwd->setObjectName("ckb_rememberPwd");
         QSizePolicy sizePolicy1(QSizePolicy::Maximum, QSizePolicy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
@@ -174,7 +174,7 @@ public:
 
         horizontalLayout_3->addWidget(ckb_rememberPwd);
 
-        ckb_autoLogin = new QCheckBox(widget2);
+        ckb_autoLogin = new QCheckBox(layoutWidget2);
         ckb_autoLogin->setObjectName("ckb_autoLogin");
         sizePolicy1.setHeightForWidth(ckb_autoLogin->sizePolicy().hasHeightForWidth());
         ckb_autoLogin->setSizePolicy(sizePolicy1);
@@ -183,7 +183,7 @@ public:
 
         horizontalLayout_3->addWidget(ckb_autoLogin);
 
-        pushButton_3 = new QPushButton(widget2);
+        pushButton_3 = new QPushButton(layoutWidget2);
         pushButton_3->setObjectName("pushButton_3");
         sizePolicy1.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
         pushButton_3->setSizePolicy(sizePolicy1);
@@ -205,17 +205,17 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_3);
 
-        widget3 = new QWidget(Login);
-        widget3->setObjectName("widget3");
-        widget3->setGeometry(QRect(10, 160, 61, 151));
-        verticalLayout_2 = new QVBoxLayout(widget3);
+        layoutWidget3 = new QWidget(Login);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(10, 160, 61, 151));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget3);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_2->addItem(verticalSpacer);
 
-        pushButton = new QPushButton(widget3);
+        pushButton = new QPushButton(layoutWidget3);
         pushButton->setObjectName("pushButton");
         pushButton->setMinimumSize(QSize(0, 20));
         QFont font2;
@@ -250,11 +250,11 @@ public:
     {
         Login->setWindowTitle(QCoreApplication::translate("Login", "Form", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Login", "\347\231\273\345\275\225", nullptr));
-        lab_avator->setText(QString());
+        lab_tubiao->setText(QString());
         lab_appText->setText(QCoreApplication::translate("Login", "\350\275\273\350\257\255", nullptr));
-        label->setText(QString());
-        line_userName->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\350\264\246\345\217\267", nullptr));
-        line_password->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\345\257\206\347\240\201", nullptr));
+        lab_ava->setText(QString());
+        userName_lineEdit->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\350\264\246\345\217\267", nullptr));
+        password_lineEdit->setText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\344\275\240\347\232\204\345\257\206\347\240\201", nullptr));
         ckb_rememberPwd->setText(QCoreApplication::translate("Login", "\350\256\260\344\275\217\345\257\206\347\240\201", nullptr));
         ckb_autoLogin->setText(QCoreApplication::translate("Login", "\350\207\252\345\212\250\347\231\273\345\275\225", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Login", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
