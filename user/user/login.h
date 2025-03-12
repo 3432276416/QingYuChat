@@ -17,6 +17,7 @@
 #include <QFocusEvent>
 #include <QSettings>
 #include <QMessageBox>
+#include<QLineEdit>
 #include <QStyle>
 #include <QPixmap>
 #include <QPainter>
@@ -64,8 +65,12 @@ public:
     // void loginSuccess();//登录失败
 
 
+private slots:
+
+
 private:
     Ui::Login *ui;
+    QString hostIP;
     QString saveAvatorPath; //存放保存头像路径
 
 };

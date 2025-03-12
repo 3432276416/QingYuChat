@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/images">
         <file>background/bg_cloud.png</file>
+        <file>icon/password_invisible.png</file>
+        <file>icon/password_visible.png</file>
+        <file>icon/default_ava.png</file>
     </qresource>
 </RCC>
