@@ -21,6 +21,7 @@
 #include <QStyle>
 #include <QPixmap>
 #include <QPainter>
+#include<QPainterPath>
 #include <QBitmap>
 #include <QIcon>
 #include<QDir>

@@ -34,6 +34,7 @@ void Login::setBackGround()
 
 void Login::setAva() //设置头像
 {
+    int m_radius=50; //头像半径
     QString appDir=QCoreApplication::applicationDirPath();
     QDir dir(appDir);
     qDebug()<<appDir;
@@ -41,11 +42,24 @@ void Login::setAva() //设置头像
     {
 
     }
-    // saveAvatorPath=dir.filePath();
-    QPixmap pix(":images/icon/default_ava.png");
-    ui->lab_ava->setScaledContents(true);
-    pix=pix.scaled(ui->lab_ava->height(),ui->lab_ava->width(),Qt::KeepAspectRatio);
-    ui->lab_ava->setPixmap(pix);
+
+    QPixmap pixmap(":images/icon/default_ava.png");
+    pixmap.fill(Qt::transparent);
+
+    //用Qpainter绘制圆形头像
+    QPainter painter(&pixmap);
+    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);
+    QPainterPath paintpath;
+    paintpath.addEllipse(rect().center(),m_radius,m_radius);
+
+    //设置裁剪区域
+    painter.setClipPath(paintpath);
+    painter.drawPixmap(QRect(0,0,m_radius,m_radius),pixmap);
+
+    ui->lab_ava->setFixedSize(100,100);
+     ui->lab_ava->setScaledContents(true);
+    ui->lab_ava->setPixmap(pixmap);
+
 }
 
 void Login::setPwdLineEdit()
