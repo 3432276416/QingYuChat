@@ -111,6 +111,8 @@ compiler_rcc_clean:
 debug/qrc_res.cpp: ../../res/res.qrc \
 		D:/Software/QT/6.5.3/mingw_64/bin/rcc.exe \
 		../../res/icon/default_ava.png \
+		../../res/icon/lock_icon.png \
+		../../res/icon/unlock_icon.png \
 		../../res/background/bg_cloud.png
 	D:\Software\QT\6.5.3\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res\res.qrc -o debug\qrc_res.cpp
 

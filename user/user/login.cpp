@@ -41,6 +41,9 @@ void Login::setUserLineEdit()
             // 文本不为空时的处理
         }
     });
+
+    QLabel userLogo=new QLabel(ui->userName_lineEdit);
+    userLogo->set
 }
 
 void Login::setPasswordLineEdit()
@@ -49,6 +52,20 @@ void Login::setPasswordLineEdit()
                                          "border-radius: 10px; color:grey;}"
                                          "QLineEdit:focus { border: 2px solid blue; }");
     ui->userName_lineEdit->setFont(QFont("Microsoft YaHei UI",12));
+
+    QCheckBox* checkBox=new QCheckBox(ui->password_lineEdit);
+    checkBox->setGeometry(ui->password_lineEdit->pos().x() + 255,ui->password_lineEdit->pos().y() + 8,20,20);
+    ui->password_lineEdit->setEchoMode(QLineEdit::Password);
+    checkBox->setStyleSheet("QCheckBox {spacing: 5px;border: none;background-color: transparent;}"
+                            "QCheckBox::indicator {width: 20px;height: 20px;border: none;image: url(:/images/icon/password_visible.png);}"
+                            "QCheckBox::indicator:checked {image: url(:/images/icon/password_invisible.png);}");
+    connect(checkBox, &QCheckBox::stateChanged, this, [this](int state) {  //设计密码可见度
+        if (state) {
+            ui->password_lineEdit->setEchoMode(QLineEdit::Normal);
+        } else {
+            ui->password_lineEdit->setEchoMode(QLineEdit::Password);
+        }
+    });
 }
 
 void Login::setBackGround()
@@ -71,22 +88,7 @@ void Login::setAva() //设置头像
 
 }
 
-void Login::setPwdLineEdit()
-{
-    QCheckBox* checkBox=new QCheckBox(ui->password_lineEdit);
-    checkBox->setGeometry(ui->password_lineEdit->pos().x() + 255,ui->password_lineEdit->pos().y() + 8,20,20);
-    // ui->password_lineEdit->setEchoMode(QLineEdit::Password);
-    checkBox->setStyleSheet("QCheckBox {spacing: 5px;border: none;background-color: transparent;}"
-                            "QCheckBox::indicator {width: 20px;height: 20px;border: none;image: url(:/images/icon/password_visible.png);}"
-                            "QCheckBox::indicator:checked {image: url(:/images/icon/password_invisible.png);}");
-    connect(checkBox, &QCheckBox::stateChanged, this, [this](int state) {  //设计密码可见度
-        if (state) {
-            ui->password_lineEdit->setEchoMode(QLineEdit::Normal);
-        } else {
-            ui->password_lineEdit->setEchoMode(QLineEdit::Password);
-        }
-    });
-}
+
 
 
 

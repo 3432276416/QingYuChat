@@ -25,7 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Login
 {
 public:
-    QPushButton *pushButton_2;
+    QPushButton *login_btn;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLineEdit *userName_lineEdit;
@@ -33,25 +33,26 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QCheckBox *ckb_rememberPwd;
     QCheckBox *ckb_autoLogin;
-    QPushButton *pushButton_3;
+    QPushButton *forgetPwd_btn;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer;
-    QPushButton *pushButton;
+    QPushButton *register_btn;
     QPushButton *ava_btn;
     QLabel *bg_movie;
+    QPushButton *quit_btn;
 
     void setupUi(QWidget *Login)
     {
         if (Login->objectName().isEmpty())
             Login->setObjectName("Login");
-        Login->resize(450, 342);
+        Login->resize(456, 342);
         Login->setStyleSheet(QString::fromUtf8("background-color:white;"));
-        pushButton_2 = new QPushButton(Login);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(90, 290, 301, 37));
-        pushButton_2->setMinimumSize(QSize(287, 37));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        login_btn = new QPushButton(Login);
+        login_btn->setObjectName("login_btn");
+        login_btn->setGeometry(QRect(90, 290, 301, 37));
+        login_btn->setMinimumSize(QSize(287, 37));
+        login_btn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font: 12pt \"Microsoft YaHei UI\";\n"
 "    background-color: rgb(167, 214, 255); \n"
 "    color: white;; \n"
@@ -82,6 +83,7 @@ public:
         userName_lineEdit->setMaxLength(12);
         userName_lineEdit->setAlignment(Qt::AlignCenter);
         userName_lineEdit->setCursorMoveStyle(Qt::VisualMoveStyle);
+        userName_lineEdit->setClearButtonEnabled(false);
 
         verticalLayout->addWidget(userName_lineEdit);
 
@@ -104,6 +106,7 @@ public:
         password_lineEdit->setMaxLength(12);
         password_lineEdit->setAlignment(Qt::AlignCenter);
         password_lineEdit->setCursorMoveStyle(Qt::VisualMoveStyle);
+        password_lineEdit->setClearButtonEnabled(false);
 
         verticalLayout->addWidget(password_lineEdit);
 
@@ -131,11 +134,11 @@ public:
 
         horizontalLayout_3->addWidget(ckb_autoLogin);
 
-        pushButton_3 = new QPushButton(layoutWidget);
-        pushButton_3->setObjectName("pushButton_3");
-        sizePolicy1.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
-        pushButton_3->setSizePolicy(sizePolicy1);
-        pushButton_3->setStyleSheet(QString::fromUtf8(" QPushButton {\n"
+        forgetPwd_btn = new QPushButton(layoutWidget);
+        forgetPwd_btn->setObjectName("forgetPwd_btn");
+        sizePolicy1.setHeightForWidth(forgetPwd_btn->sizePolicy().hasHeightForWidth());
+        forgetPwd_btn->setSizePolicy(sizePolicy1);
+        forgetPwd_btn->setStyleSheet(QString::fromUtf8(" QPushButton {\n"
 "       font: 10pt \"Microsoft YaHei UI\";\n"
 "       border: none;\n"
 "       text-decoration: none; \n"
@@ -148,7 +151,7 @@ public:
 "   }\n"
 ""));
 
-        horizontalLayout_3->addWidget(pushButton_3);
+        horizontalLayout_3->addWidget(forgetPwd_btn);
 
 
         verticalLayout->addLayout(horizontalLayout_3);
@@ -163,9 +166,9 @@ public:
 
         verticalLayout_2->addItem(verticalSpacer);
 
-        pushButton = new QPushButton(layoutWidget1);
-        pushButton->setObjectName("pushButton");
-        pushButton->setMinimumSize(QSize(0, 20));
+        register_btn = new QPushButton(layoutWidget1);
+        register_btn->setObjectName("register_btn");
+        register_btn->setMinimumSize(QSize(0, 20));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
         font1.setPointSize(10);
@@ -173,8 +176,8 @@ public:
         font1.setItalic(false);
         font1.setUnderline(false);
         font1.setStrikeOut(false);
-        pushButton->setFont(font1);
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        register_btn->setFont(font1);
+        register_btn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "       font: 10pt \"Microsoft YaHei UI\";\n"
 "       border: none;\n"
 "       text-decoration: none; \n"
@@ -186,7 +189,7 @@ public:
 "       color: gray;\n"
 "   }"));
 
-        verticalLayout_2->addWidget(pushButton);
+        verticalLayout_2->addWidget(register_btn);
 
         ava_btn = new QPushButton(Login);
         ava_btn->setObjectName("ava_btn");
@@ -198,13 +201,14 @@ public:
         bg_movie->setGeometry(QRect(-10, 10, 451, 81));
         bg_movie->setStyleSheet(QString::fromUtf8("background:transparent;"));
         bg_movie->setIndent(0);
-        QWidget::setTabOrder(pushButton_2, userName_lineEdit);
+        quit_btn = new QPushButton(Login);
+        quit_btn->setObjectName("quit_btn");
+        quit_btn->setGeometry(QRect(410, 0, 41, 31));
+        QWidget::setTabOrder(login_btn, userName_lineEdit);
         QWidget::setTabOrder(userName_lineEdit, password_lineEdit);
         QWidget::setTabOrder(password_lineEdit, ava_btn);
-        QWidget::setTabOrder(ava_btn, pushButton);
-        QWidget::setTabOrder(pushButton, ckb_rememberPwd);
+        QWidget::setTabOrder(ava_btn, ckb_rememberPwd);
         QWidget::setTabOrder(ckb_rememberPwd, ckb_autoLogin);
-        QWidget::setTabOrder(ckb_autoLogin, pushButton_3);
 
         retranslateUi(Login);
 
@@ -214,17 +218,18 @@ public:
     void retranslateUi(QWidget *Login)
     {
         Login->setWindowTitle(QCoreApplication::translate("Login", "Form", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Login", "\347\231\273\345\275\225", nullptr));
+        login_btn->setText(QCoreApplication::translate("Login", "\347\231\273\345\275\225", nullptr));
         userName_lineEdit->setText(QString());
         userName_lineEdit->setPlaceholderText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\347\224\250\346\210\267\345\220\215", nullptr));
         password_lineEdit->setText(QString());
         password_lineEdit->setPlaceholderText(QCoreApplication::translate("Login", "\350\257\267\350\276\223\345\205\245\345\257\206\347\240\201", nullptr));
         ckb_rememberPwd->setText(QCoreApplication::translate("Login", "\350\256\260\344\275\217\345\257\206\347\240\201", nullptr));
         ckb_autoLogin->setText(QCoreApplication::translate("Login", "\350\207\252\345\212\250\347\231\273\345\275\225", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Login", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
-        pushButton->setText(QCoreApplication::translate("Login", "\346\263\250\345\206\214\350\264\246\345\217\267", nullptr));
+        forgetPwd_btn->setText(QCoreApplication::translate("Login", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
+        register_btn->setText(QCoreApplication::translate("Login", "\346\263\250\345\206\214\350\264\246\345\217\267", nullptr));
         ava_btn->setText(QString());
         bg_movie->setText(QString());
+        quit_btn->setText(QString());
     } // retranslateUi
 
 };

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
+    <width>456</width>
     <height>342</height>
    </rect>
   </property>
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color:white;</string>
   </property>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="login_btn">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -313,7 +313,7 @@ border-radius: 50px;</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="quit_btn">
    <property name="geometry">
     <rect>
      <x>410</x>
@@ -328,14 +328,12 @@ border-radius: 50px;</string>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>pushButton_2</tabstop>
+  <tabstop>login_btn</tabstop>
   <tabstop>userName_lineEdit</tabstop>
   <tabstop>password_lineEdit</tabstop>
   <tabstop>ava_btn</tabstop>
-  <tabstop>pushButton</tabstop>
   <tabstop>ckb_rememberPwd</tabstop>
   <tabstop>ckb_autoLogin</tabstop>
-  <tabstop>pushButton_3</tabstop>
  </tabstops>
  <resources/>
  <connections/>
