@@ -16,12 +16,39 @@ Login::~Login()
 
 void Login::InitView()
 {
-    this->setWindowTitle(tr("登录界面"));
-    ui->userName_lineEdit->setText(tr("请输入用户名"));
-    ui->password_lineEdit->setText(tr("请输入密码"));
+    // this->setWindowFlags(Qt::Dialog | Qt::FramelessWindowHint);
+    this->setWindowTitle(tr("轻语app"));
     setBackGround();
     setAva();
-    setPwdLineEdit();
+    setUserLineEdit();
+    setPasswordLineEdit();
+}
+
+void Login::setUserLineEdit()
+{
+
+    ui->userName_lineEdit->setStyleSheet("QLineEdit {border: 1px solid rgba(0, 0, 0, 0.3);"
+                                         "border-radius: 10px; color:grey;}"
+                                         "QLineEdit:focus { border: 2px solid blue; }");
+    ui->userName_lineEdit->setFont(QFont("Microsoft YaHei UI",12));
+    connect(ui->userName_lineEdit, &QLineEdit::textChanged, this, [this](const QString &text) {
+        if (text.isEmpty()) {
+            ui->userName_lineEdit->setToolTip("用户名不能为空");
+            ui->userName_lineEdit->setStyleSheet("QLineEdit { QLineEdit {border: 1px solid rgba(0, 0, 0, 0.3);"
+                                         "border-radius: 10px; color:grey;}"
+                                         "QLineEdit:focus { border: 2px solid blue; }");
+        } else {
+            // 文本不为空时的处理
+        }
+    });
+}
+
+void Login::setPasswordLineEdit()
+{
+    ui->userName_lineEdit->setStyleSheet("QLineEdit {border: 1px solid rgba(0, 0, 0, 0.3);"
+                                         "border-radius: 10px; color:grey;}"
+                                         "QLineEdit:focus { border: 2px solid blue; }");
+    ui->userName_lineEdit->setFont(QFont("Microsoft YaHei UI",12));
 }
 
 void Login::setBackGround()
@@ -34,18 +61,14 @@ void Login::setBackGround()
 
 void Login::setAva() //设置头像
 {
-    QString appDir=QCoreApplication::applicationDirPath();
-    QDir dir(appDir);
-    qDebug()<<appDir;
-    if(!dir.exists())
-    {
+    ui->ava_btn->setFixedSize(100,100);
+    QIcon icon=QIcon(":images/icon/default_ava.png");
+    ui->ava_btn->setIcon(icon);
+    ui->ava_btn->setIconSize(QSize(50,50));
+    // ui->ava_btn->setWindowFlag(Qt::WindowStaysOnTopHint);
+    ui->ava_btn->raise();
+    ui->bg_movie->lower();
 
-    }
-    // saveAvatorPath=dir.filePath();
-    QPixmap pix(":images/icon/default_ava");
-    ui->lab_ava->setScaledContents(true);
-    pix=pix.scaled(ui->lab_ava->height(),ui->lab_ava->width(),Qt::KeepAspectRatio);
-    ui->lab_ava->setPixmap(pix);
 }
 
 void Login::setPwdLineEdit()

@@ -16,9 +16,11 @@
 #include <QLineEdit>
 #include <QFocusEvent>
 #include <QSettings>
+#include<QLabel>
 #include <QMessageBox>
 #include <QStyle>
 #include <QPixmap>
+#include<QPainterPath>
 #include <QPainter>
 #include <QBitmap>
 #include <QIcon>
@@ -48,6 +50,8 @@ public:
     void setBackGround();
     void setAva();//初始化头像
     void setPwdLineEdit();
+    void setUserLineEdit();
+    void setPasswordLineEdit();
     // void setIcon();//初始化左上角图标
     // void setVal();//设置输入验证器
     // void setTimer();//设置一些计时器 用于动态背景与动态按钮

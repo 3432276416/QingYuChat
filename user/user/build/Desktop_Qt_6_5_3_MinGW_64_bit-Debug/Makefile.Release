@@ -110,6 +110,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_res.cpp
 release/qrc_res.cpp: ../../res/res.qrc \
 		D:/Software/QT/6.5.3/mingw_64/bin/rcc.exe \
+		../../res/icon/default_ava.png \
 		../../res/background/bg_cloud.png
 	D:\Software\QT\6.5.3\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res\res.qrc -o release\qrc_res.cpp
 
@@ -325,12 +326,17 @@ release/moc_login.cpp: ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \
@@ -745,12 +751,17 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \
@@ -798,9 +809,6 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlayout.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QPushButton \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QSpacerItem \
@@ -1012,12 +1020,17 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QStyle \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qstyle.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPixmap \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainterPath \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QPainter \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpainter.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QBitmap \

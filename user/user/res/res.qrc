@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/images">
         <file>background/bg_cloud.png</file>
+        <file>icon/default_ava.png</file>
+        <file>icon/lock_icon.png</file>
+        <file>icon/unlock_icon.png</file>
     </qresource>
 </RCC>
