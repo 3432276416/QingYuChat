@@ -92,6 +92,9 @@ color:grey;
       <property name="cursorMoveStyle">
        <enum>Qt::VisualMoveStyle</enum>
       </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
      </widget>
     </item>
     <item>
@@ -138,6 +141,9 @@ color:grey;
       <property name="cursorMoveStyle">
        <enum>Qt::VisualMoveStyle</enum>
       </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
      </widget>
     </item>
     <item>
@@ -180,7 +186,7 @@ color:grey;
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="forgetPwd_btn">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -234,7 +240,7 @@ color:grey;
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="register_btn">
       <property name="minimumSize">
        <size>
         <width>0</width>

@@ -18,10 +18,12 @@
 #include <QSettings>
 #include<QLabel>
 #include <QMessageBox>
+#include<QLineEdit>
 #include <QStyle>
 #include <QPixmap>
 #include<QPainterPath>
 #include <QPainter>
+#include<QPainterPath>
 #include <QBitmap>
 #include <QIcon>
 #include<QDir>
@@ -68,8 +70,12 @@ public:
     // void loginSuccess();//登录失败
 
 
+private slots:
+
+
 private:
     Ui::Login *ui;
+    QString hostIP;
     QString saveAvatorPath; //存放保存头像路径
 
 };
