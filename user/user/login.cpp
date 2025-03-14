@@ -7,6 +7,8 @@ Login::Login(QWidget *parent)
 {
     ui->setupUi(this);
     InitView();
+    hostIP="10.61.108.83";
+    hostPort=6677;
 }
 
 Login::~Login()
@@ -24,6 +26,11 @@ void Login::InitView()
     setUserLineEdit();
     setPasswordLineEdit();
     setBGMovie();
+}
+
+void Login::mouseMoveEvent(QMouseEvent *event)//拖拽移动窗口位置
+{
+
 }
 
 void Login::setBGMovie()
@@ -117,8 +124,64 @@ void Login::setAva() //设置头像
     ui->ava_btn->raise();
 }
 
+void Login::setVal()
+{
+    QRegularExpression regExp("[a-zA-Z0-9]{1,12}$");
+    validator=new QRegularExpressionValidator(regExp,this);
+    ui->password_lineEdit->setValidator(validator);
+    ui->userName_lineEdit->setValidator(validator);
+}
+
+bool Login::tcpConnect()
+{
+    if(socket->state()!=QAbstractSocket::ConnectedState)
+    {
+        socket->connectToHost(hostIP,hostPort);
+        if(socket->waitForConnected(2000))
+        {
+            qDebug()<<"连接服务器成功";
+            return true;
+        }
+        else
+        {
+            qDebug()<<"连接失败"<<socket->errorString();
+            return false;
+        }
+    }
+    return true;
+}
+
+void Login::remeberPassword()
+{
+    settings.beginGroup(ui->userName_lineEdit->text());
+    settings.setValue("userName",ui->userName_lineEdit->text());
+    settings.setValue("password",ui->password_lineEdit->text());
+    settings.endGroup();
+}
 
 
 
 
+void Login::on_ckb_autoLogin_toggled(bool checked)
+{
+    if(ui->ckb_autoLogin->isChecked())
+    {
+        ui->ckb_rememberPwd->setChecked(checked);
+    }
+}
+
+
+void Login::on_ckb_rememberPwd_toggled(bool checked)
+{
+    if(!checked && ui->ckb_autoLogin->isChecked())
+    {
+        ui->ckb_autoLogin->setChecked(false);
+    }
+}
+
+
+void Login::on_register_btn_clicked()
+{
+    tcpConnect(); //连接服务器
+}
 

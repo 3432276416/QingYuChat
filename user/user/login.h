@@ -44,41 +44,50 @@ class Login : public QWidget
 public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
-    int moveFlag = 0;
-    QPoint dragPosition;
-    QValidator *validator;
 
 public:
-     void InitView();
+    bool tcpConnect();
+    void remeberPassword();
+    void InitView();
     void setBackGround();
     void setAva();//初始化头像
     void setPwdLineEdit();
     void setUserLineEdit();
     void setPasswordLineEdit();
+    void setVal();
     void setBGMovie();
-    // void setIcon();//初始化左上角图标
-    // void setVal();//设置输入验证器
-    // void setTimer();//设置一些计时器 用于动态背景与动态按钮
-    // bool tcpConnect();//连接服务器
-    // void remeberPassword();//记住密码
-    // void rememberAvator();//记住头像
-    // void ifAutoLogin();//检查自动登录设置
-    // void ifRememberPassword();//如果没有自动登录的检查是否有人记住密码
-    // void paintEvent(QPaintEvent *event);//绘制渐变背景
-    // void mouseMoveEvent(QMouseEvent *event);//拖拽移动窗口位置
-    // void mouseReleaseEvent(QMouseEvent *event);//重置移动状态
-    // void saveAvator(QString avator);//保存头像
-    // void loginFail();//登录失败
-    // void loginSuccess();//登录失败
-
+    void mouseMoveEvent(QMouseEvent *event);
 
 private slots:
 
 
+    void on_ckb_autoLogin_toggled(bool checked);
+
+    void on_ckb_rememberPwd_toggled(bool checked);
+
+    void on_register_btn_clicked();
+
 private:
     Ui::Login *ui;
     QString hostIP;
+    int hostPort;
     QString saveAvatorPath; //存放保存头像路径
+    QSettings settings = QSettings("settings.ini", QSettings::IniFormat);
+    /*存储
+    /  lastlogin: 上次成功登录的用户名。如果有说明则有人记住密码了 没有则说明没人记住密码 不必理会
+    /  账号/password: 与特定用户相关联的密码。分组存储 组名是账号
+    */
+    QSettings logSetting = QSettings("set.ini", QSettings::IniFormat);
+    /*存储
+    /  autologin: 是否启用自动登录的布尔值。
+    /  autologinuser: 自动登录的用户名。加载后去setting中找密码
+    */
+    QTimer *timer;
+    int moveFlag = 0;
+    QPoint dragPosition;
+    QRegularExpressionValidator *validator; //验证密码用户合法性
+    QTcpSocket* socket;
+
 
 };
 
