@@ -40,13 +40,12 @@ public:
     QPushButton *register_btn;
     QPushButton *ava_btn;
     QLabel *bg_movie;
-    QPushButton *quit_btn;
 
     void setupUi(QWidget *Login)
     {
         if (Login->objectName().isEmpty())
             Login->setObjectName("Login");
-        Login->resize(456, 342);
+        Login->resize(460, 340);
         Login->setStyleSheet(QString::fromUtf8("background-color:white;"));
         login_btn = new QPushButton(Login);
         login_btn->setObjectName("login_btn");
@@ -193,17 +192,14 @@ public:
 
         ava_btn = new QPushButton(Login);
         ava_btn->setObjectName("ava_btn");
-        ava_btn->setGeometry(QRect(180, 60, 100, 100));
+        ava_btn->setGeometry(QRect(180, 59, 100, 100));
         ava_btn->setStyleSheet(QString::fromUtf8("border: 1px solid black;\n"
 "border-radius: 50px;"));
         bg_movie = new QLabel(Login);
         bg_movie->setObjectName("bg_movie");
-        bg_movie->setGeometry(QRect(-10, 10, 451, 81));
+        bg_movie->setGeometry(QRect(0, 0, 460, 161));
         bg_movie->setStyleSheet(QString::fromUtf8("background:transparent;"));
         bg_movie->setIndent(0);
-        quit_btn = new QPushButton(Login);
-        quit_btn->setObjectName("quit_btn");
-        quit_btn->setGeometry(QRect(410, 0, 41, 31));
         QWidget::setTabOrder(login_btn, userName_lineEdit);
         QWidget::setTabOrder(userName_lineEdit, password_lineEdit);
         QWidget::setTabOrder(password_lineEdit, ava_btn);
@@ -229,7 +225,6 @@ public:
         register_btn->setText(QCoreApplication::translate("Login", "\346\263\250\345\206\214\350\264\246\345\217\267", nullptr));
         ava_btn->setText(QString());
         bg_movie->setText(QString());
-        quit_btn->setText(QString());
     } // retranslateUi
 
 };

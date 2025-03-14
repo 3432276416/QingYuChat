@@ -4,5 +4,12 @@
         <file>icon/default_ava.png</file>
         <file>icon/lock_icon.png</file>
         <file>icon/unlock_icon.png</file>
+        <file>icon/password_invisible.png</file>
+        <file>icon/password_visible.png</file>
+        <file>icon/user_lineEdit_normal.png</file>
+        <file>icon/user.png</file>
+    </qresource>
+    <qresource prefix="/movies">
+        <file>movie/bg_movie.gif</file>
     </qresource>
 </RCC>

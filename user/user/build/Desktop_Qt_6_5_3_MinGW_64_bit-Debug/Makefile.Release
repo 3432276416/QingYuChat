@@ -113,7 +113,12 @@ release/qrc_res.cpp: ../../res/res.qrc \
 		../../res/icon/default_ava.png \
 		../../res/icon/lock_icon.png \
 		../../res/icon/unlock_icon.png \
-		../../res/background/bg_cloud.png
+		../../res/icon/user_lineEdit_normal.png \
+		../../res/icon/password_visible.png \
+		../../res/icon/user.png \
+		../../res/icon/password_invisible.png \
+		../../res/background/bg_cloud.png \
+		../../res/movie/bg_movie.gif
 	D:\Software\QT\6.5.3\mingw_64\bin\rcc.exe -name res --no-zstd ..\..\res\res.qrc -o release\qrc_res.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -318,19 +323,43 @@ release/moc_login.cpp: ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMovie \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qmovie.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimagereader.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qmutex.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qresultstore.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qrunnable.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qexception.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpromise.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimageiohandler.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qplugin.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20algorithm.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20functional.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfactoryinterface.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
@@ -743,19 +772,43 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMovie \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qmovie.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimagereader.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qmutex.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qresultstore.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qrunnable.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qexception.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpromise.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimageiohandler.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qplugin.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20algorithm.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20functional.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfactoryinterface.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
@@ -784,22 +837,6 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QVariant \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qmutex.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qresultstore.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qrunnable.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qexception.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpromise.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h \
@@ -1012,19 +1049,43 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QFocusEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QKeyEvent \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMouseEvent \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/QMovie \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qmovie.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimagereader.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qmutex.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qresultstore.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qrunnable.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qexception.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpromise.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qimageiohandler.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qplugin.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20algorithm.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/q20functional.h \
+		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfactoryinterface.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qframe.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextformat.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpen.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qtextoption.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/QSettings \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qsettings.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QLabel \
-		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qpicture.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
@@ -1051,22 +1112,6 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qstandardpaths.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/QApplication \
 		D:/Software/QT/6.5.3/mingw_64/include/QtWidgets/qapplication.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qeventloop.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qmutex.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qtsan_impl.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qresultstore.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qrunnable.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qexception.h \
-		D:/Software/QT/6.5.3/mingw_64/include/QtCore/qpromise.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qguiapplication.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qinputmethod.h \
 		D:/Software/QT/6.5.3/mingw_64/include/QtGui/qguiapplication_platform.h

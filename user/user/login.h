@@ -13,10 +13,11 @@
 #include <QFocusEvent>
 #include <QKeyEvent>
 #include <QMouseEvent>
+#include<QLabel>
+#include<QMovie>
 #include <QLineEdit>
 #include <QFocusEvent>
 #include <QSettings>
-#include<QLabel>
 #include <QMessageBox>
 #include<QLineEdit>
 #include <QStyle>
@@ -54,6 +55,7 @@ public:
     void setPwdLineEdit();
     void setUserLineEdit();
     void setPasswordLineEdit();
+    void setBGMovie();
     // void setIcon();//初始化左上角图标
     // void setVal();//设置输入验证器
     // void setTimer();//设置一些计时器 用于动态背景与动态按钮

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>456</width>
-    <height>342</height>
+    <width>460</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -281,7 +281,7 @@ color:grey;
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>60</y>
+     <y>59</y>
      <width>100</width>
      <height>100</height>
     </rect>
@@ -297,10 +297,10 @@ border-radius: 50px;</string>
   <widget class="QLabel" name="bg_movie">
    <property name="geometry">
     <rect>
-     <x>-10</x>
-     <y>10</y>
-     <width>451</width>
-     <height>81</height>
+     <x>0</x>
+     <y>0</y>
+     <width>460</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -311,19 +311,6 @@ border-radius: 50px;</string>
    </property>
    <property name="indent">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="quit_btn">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>0</y>
-     <width>41</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
  </widget>

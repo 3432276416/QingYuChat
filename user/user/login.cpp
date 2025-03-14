@@ -17,11 +17,27 @@ Login::~Login()
 void Login::InitView()
 {
     // this->setWindowFlags(Qt::Dialog | Qt::FramelessWindowHint);
+    // this->setWindowFlags(Qt::Dialog);
     this->setWindowTitle(tr("轻语app"));
     setBackGround();
     setAva();
     setUserLineEdit();
     setPasswordLineEdit();
+    setBGMovie();
+}
+
+void Login::setBGMovie()
+{
+    ui->bg_movie->setGeometry(0,0,460,170);
+    QMovie* movie=new QMovie(":movies/movie/bg_movie.gif");
+    if(movie->isValid())
+    {
+        ui->bg_movie->setAlignment(Qt::AlignCenter); // 可以根据需要设置对齐方式
+        ui->bg_movie->setMovie(movie);
+        ui->bg_movie->setScaledContents(true);
+        movie->start(); // 开始播放GIF动画
+    }
+    ui->bg_movie->lower(); //将背景动画设定为图层低层
 }
 
 void Login::setUserLineEdit()
@@ -42,16 +58,21 @@ void Login::setUserLineEdit()
         }
     });
 
-    QLabel userLogo=new QLabel(ui->userName_lineEdit);
-    userLogo->set
+
+    QLabel* userLogo=new QLabel(ui->userName_lineEdit);
+    userLogo->setStyleSheet("QLabel{background:transparent;border:none;}");
+    userLogo->setGeometry(7,8,20,20);
+    QPixmap pixmap_normal(":images/icon/user.png");
+    userLogo->setPixmap(pixmap_normal);
+    userLogo->setScaledContents(true);
 }
 
 void Login::setPasswordLineEdit()
 {
-    ui->userName_lineEdit->setStyleSheet("QLineEdit {border: 1px solid rgba(0, 0, 0, 0.3);"
+    ui->password_lineEdit->setStyleSheet("QLineEdit {border: 1px solid rgba(0, 0, 0, 0.3);"
                                          "border-radius: 10px; color:grey;}"
                                          "QLineEdit:focus { border: 2px solid blue; }");
-    ui->userName_lineEdit->setFont(QFont("Microsoft YaHei UI",12));
+    ui->password_lineEdit->setFont(QFont("Microsoft YaHei UI",12));
 
     QCheckBox* checkBox=new QCheckBox(ui->password_lineEdit);
     checkBox->setGeometry(ui->password_lineEdit->pos().x() + 255,ui->password_lineEdit->pos().y() + 8,20,20);
@@ -65,6 +86,17 @@ void Login::setPasswordLineEdit()
         } else {
             ui->password_lineEdit->setEchoMode(QLineEdit::Password);
         }
+    });
+
+    QLabel* pwdLogo=new QLabel(ui->password_lineEdit);
+    pwdLogo->setStyleSheet("QLabel{background:transparent;border:none;}");
+    pwdLogo->setGeometry(7,8,20,20);
+    QPixmap pixmap_normal(":images/icon/lock_icon.png");
+    QPixmap pixmap_focus(":images/icon/unlock_icon.png");
+    pwdLogo->setPixmap(pixmap_normal);
+    pwdLogo->setScaledContents(true);
+    connect(ui->password_lineEdit,&QLineEdit::selectionChanged,this,[](){
+
     });
 }
 
@@ -82,10 +114,7 @@ void Login::setAva() //设置头像
     QIcon icon=QIcon(":images/icon/default_ava.png");
     ui->ava_btn->setIcon(icon);
     ui->ava_btn->setIconSize(QSize(50,50));
-    // ui->ava_btn->setWindowFlag(Qt::WindowStaysOnTopHint);
     ui->ava_btn->raise();
-    ui->bg_movie->lower();
-
 }
 
 
