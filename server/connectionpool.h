@@ -1,0 +1,31 @@
+#ifndef CONNECTIONPOOL_H
+#define CONNECTIONPOOL_H
+
+#include <QMainWindow>
+#include <QObject>
+#include <QSharedDataPointer>
+#include <QWidget>
+#include <QQueue>
+#include<QMutex>
+#include <QSqlError>
+#include <QSqlQuery>
+
+class ConnectionPool
+{
+public:
+    ConnectionPool& getInstance();
+
+private:
+
+    ConnectionPool();//私有构造函数
+    ~ConnectionPool();//私有析构函数
+     QSqlDatabase getConnection();
+    QQueue<QSqlDatabase> pool;
+    QMutex mutex;//互斥锁
+    int maxConnections;
+    QString dbName="qingyuserver.db";
+    int connectionCounter=0;
+
+};
+
+#endif // CONNECTIONPOOL_H
