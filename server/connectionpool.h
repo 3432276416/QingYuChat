@@ -14,6 +14,10 @@ class ConnectionPool
 {
 public:
     ConnectionPool& getInstance();
+    void releaseConnection(QSqlDatabase db);//释放连接
+
+    void setMaxConnections(int max);//设置最大连接数
+    int getMaxConnections();
 
 private:
 
@@ -25,6 +29,7 @@ private:
     int maxConnections;
     QString dbName="qingyuserver.db";
     int connectionCounter=0;
+
 
 };
 
