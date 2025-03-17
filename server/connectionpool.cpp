@@ -8,7 +8,6 @@ ConnectionPool& ConnectionPool::getInstance()//获取单例实例
 
 ConnectionPool::ConnectionPool(): maxConnections(301) {
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE",dbName);
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE", dbName);
     db.setDatabaseName(dbName);
     if (!db.open()) {
         qDebug() << "打开数据库失败" << db.lastError().text();
@@ -18,7 +17,7 @@ ConnectionPool::ConnectionPool(): maxConnections(301) {
         QSqlQuery query(db);
         //创建用户表
         query.exec("CREATE TABLE IF NOT EXISTS Users ("
-                   "qq_number VARCHAR(20) PRIMARY KEY NOT NULL, "
+                   "username VARCHAR(20) PRIMARY KEY NOT NULL, "
                    "password VARCHAR(255) NOT NULL, "
                    "avator LONGTEXT, "
                    "nickname VARCHAR(50), "

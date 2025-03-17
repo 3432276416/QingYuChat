@@ -1,7 +1,9 @@
 #ifndef SERVER_H
 #define SERVER_H
-
 #include <QMainWindow>
+#include<QHash>
+
+class ClientHandler;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,5 +27,8 @@ private slots:
 
 private:
     Ui::Server *ui;
+
+public:
+    QHash<QString,ClientHandler*> clientsMap; //存储账号与ClientHandler的映射
 };
 #endif // SERVER_H

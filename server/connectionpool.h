@@ -15,7 +15,7 @@ class ConnectionPool
 public:
     ConnectionPool& getInstance();
     void releaseConnection(QSqlDatabase db);//释放连接
-
+    QSqlDatabase getConnection();
     void setMaxConnections(int max);//设置最大连接数
     int getMaxConnections();
 
@@ -23,7 +23,6 @@ private:
 
     ConnectionPool();//私有构造函数
     ~ConnectionPool();//私有析构函数
-     QSqlDatabase getConnection();
     QQueue<QSqlDatabase> pool;
     QMutex mutex;//互斥锁
     int maxConnections;
