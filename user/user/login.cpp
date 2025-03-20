@@ -28,6 +28,18 @@ void Login::InitView()
     setBGMovie();
 }
 
+void Login::paintEvent(QPaintEvent *event)//绘画渐变背景
+{
+    // QPainter painter(this);
+    // painter.setRenderHint(QPainter::Antialiasing);//反锯齿
+    // QLinearGradient gradient(0, 0, width(), height());//创建渐变
+    // int g1 = 220 + (sin(0 * 0.06) * 30);//增加绿色分量变化
+    // gradient.setColorAt(0.0, QColor(255, g1, 235));//动态渐变开始颜色
+    // gradient.setColorAt(1.0, QColor(172, 224, 249));//动态渐变结束颜色
+    // painter.setBrush(gradient);//使用渐变作为背景
+    // painter.drawRect(rect());
+}
+
 void Login::mouseMoveEvent(QMouseEvent *event)//拖拽移动窗口位置
 {
 
@@ -176,6 +188,71 @@ void Login::on_ckb_rememberPwd_toggled(bool checked)
     if(!checked && ui->ckb_autoLogin->isChecked())
     {
         ui->ckb_autoLogin->setChecked(false);
+    }
+}
+
+void Login::rememberAvator()//记住头像
+{
+    qDebug()<<"要发送索要头像的请求了";
+    QJsonObject jsonObj;
+    QJsonDocument jsonDoc;
+    QByteArray jsonData;
+    jsonObj["tag"] = "askforavator";//向服务器索要头像
+    jsonObj["qq_number"] = ui->userName_lineEdit->text();
+    jsonDoc = QJsonDocument(jsonObj);
+    jsonData = jsonDoc.toJson();
+    //发送消息
+    jsonDoc = QJsonDocument(jsonObj);
+    jsonData = jsonDoc.toJson();
+    //添加标识符
+    QByteArray messageWithSeparator = jsonData + "END";
+    //发送JSON 数据
+    socket->write(messageWithSeparator);
+    socket->flush();
+    jsonData.clear();
+}
+
+void Login::loginSuccess()//登录成功
+{
+    qDebug() << "登录成功";
+    loginFlag = true;
+    settings.setValue("lastlogin", ui->userName_lineEdit->text());//记录上次登录账号
+    if (ui->ckb_rememberPwd->isChecked() && ui->ckb_autoLogin->isChecked()) {
+        remeberPassword();//记住密码
+        rememberAvator();//记住头像
+        preSetting.setValue("autologin", true);
+        preSetting.setValue("autologinuser", ui->userName_lineEdit->text());
+        qDebug() << "记住密码和头像了,下次自动登录";
+    } else if (ui->ckb_rememberPwd->isChecked()) {
+        remeberPassword();//记住密码
+        rememberAvator();//记住头像
+        preSetting.setValue("autologin", false);
+        preSetting.setValue("autologinuser", "");
+        qDebug() << "记住密码和头像了,下次不自动登录";
+    } else {
+        rememberAvator();//记住头像
+        settings.remove(ui->userName_lineEdit->text());
+        QFile::remove(saveAvatorPath);
+        settings.setValue("lastlogin", "");
+        preSetting.setValue("autologin", false);
+        preSetting.setValue("autologinuser", "");
+        qDebug() << "移除记住的账号与密码与头像了";
+    }
+}
+
+void Login::loginFail()//登录失败
+{
+    settings.remove(ui->userName_lineEdit->text());
+    QFile::remove(saveAvatorPath);
+    settings.setValue("lastlogin", "");
+    preSetting.setValue("autologin", false);
+    preSetting.setValue("autologinuser", "");
+    qDebug() << "移除记住的账号与密码与头像了";
+    if (socket->state() == QAbstractSocket::ConnectedState) {
+        Dialog msgBox(this);
+        msgBox.transText("请检查您的账号密码!");
+        msgBox.setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Dialog |Qt::FramelessWindowHint);
+        msgBox.exec();
     }
 }
 
