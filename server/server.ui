@@ -36,6 +36,9 @@
     <property name="currentText">
      <string/>
     </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
    </widget>
    <widget class="QPushButton" name="open_btn">
     <property name="geometry">
@@ -63,7 +66,7 @@
      <string>刷新表格</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -90,7 +93,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="sql_btn">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
          <horstretch>0</horstretch>
