@@ -2,13 +2,21 @@
 
 ConnectionPool& ConnectionPool::getInstance()//获取单例实例
 {
-    static ConnectionPool instance;//确保是同一个实例
-    return instance;
+    static QMutex mutex;
+    static QScopedPointer<ConnectionPool> inst;
+    if (Q_UNLIKELY(!inst)) {
+        mutex.lock();
+        if (!inst) {
+            inst.reset(new ConnectionPool);
+        }
+        mutex.unlock();
+    }
+    return *inst;
 }
 
 ConnectionPool::ConnectionPool(): maxConnections(301) {
-    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE",dbName);
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE", dbName);
+    QString dbPath = QDir::currentPath() + '\\'+dbName;
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE",dbPath);
     db.setDatabaseName(dbName);
     if (!db.open()) {
         qDebug() << "打开数据库失败" << db.lastError().text();
@@ -102,6 +110,7 @@ QSqlDatabase ConnectionPool::getConnection() // 获取数据库连接
             qDebug() << "数据库打开失败:" << db.lastError().text();
             return QSqlDatabase();
         }
+        qDebug()<<"打开数据库";
         return db; // 返回新连接
     } else {
         qDebug() << "数据库最大连接数已达到!";
