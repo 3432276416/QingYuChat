@@ -11,19 +11,16 @@ Server::Server(QWidget *parent)
     ui->ckb_select->addItem("Friends");
     ui->ckb_select->addItem("FriendRequests");
     databasesConnect();
-    qry.prepare("INSERT INTO Users(qq_number, password) "
-                "VALUES(:username, :password)");
-    qry.bindValue(":username,","1234");
-    qry.bindValue(":password","root25");
     //显示表格
-    if(qry.exec())
-    {
-        qDebug()<<"执行成功";
-    }
-    showTable("Users");
+    model=new QSqlTableModel(this,db);
+    model->setTable("Users");
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableView->setModel(model);
+    model->select();
+
     //初始化tcp对象
     tcp_server = new QTcpServer(this);
+    port=6677;
 
 }
 
@@ -47,26 +44,22 @@ bool Server::databasesConnect()//连接数据库
 
 }
 
-void Server::showTable(const QString &tablename)//显示表格
+void Server::showSqlTable(const QString &tablename)//显示表格
 {
-    QString queryStr;
+    model=new QSqlTableModel(this,db);
     if (tablename == "Users") {
-        queryStr = "SELECT qq_number,password,nickname,signature,gender,question,answer FROM Users";
+        model->setTable("Users");
+        model->select();
     } else if (tablename == "Messages") {
-        queryStr = "SELECT sender_id,receiver_id,timestamp,message_type,filename,status FROM Messages";
+        model->setTable("Messages");
+        model->select();
     } else if (tablename == "Friends") {
-        queryStr = "SELECT * FROM Friends";
+        model->setTable("Friends");
+        model->select();
     } else if (tablename == "FriendRequests") {
-        queryStr = "SELECT * FROM FriendRequests";
+        model->setTable("FriendRequests");
+        model->select();
     }
-    //创建模型并设置查询
-    QSqlQueryModel *model = new QSqlQueryModel(this);
-    model->setQuery(queryStr, Server::db);
-    if (model->lastError().isValid()) {
-        qDebug() << "查询失败:" << model->lastError().text();
-        return;
-    }
-    qDebug() << "加载行数:" << model->rowCount();
     ui->tableView->setModel(model);
 }
 
@@ -89,7 +82,7 @@ bool Server::tcpListen()
 void Server::on_flush_btn_clicked()
 {
     qDebug()<<"当前连接的账号有"<<clientsMap;
-    on_ckb_select_currentIndexChanged(ui->ckb_select->currentIndex());
+    // on_ckb_select_currentIndexChanged(ui->ckb_select->currentIndex());
 }
 
 
@@ -107,17 +100,6 @@ void Server::on_open_btn_clicked()
         tcp_server->close();//确保关闭 TCP 服务器
     }
 }
-void Server::on_ckb_select_currentIndexChanged(int index)
-{
-    if(index == 0)
-        showTable("Users");
-    if(index == 1)
-        showTable("Messages");
-    if(index == 2)
-        showTable("Friends");
-    if(index == 3)
-        showTable("FriendRequests");
-}
 
 void Server::onNewConnection()//有新连接到来新建clienthandler
 {
@@ -131,9 +113,49 @@ void Server::onNewConnection()//有新连接到来新建clienthandler
 void Server::on_sql_btn_clicked()
 {
     if (qry.prepare(ui->lineEdit->text()) && qry.exec()) {
-        showTable(ui->ckb_select->currentText());
+        showSqlTable(ui->ckb_select->currentText());
     } else {
         qDebug() << "SQL 执行错误:" << qry.lastError().text();
     }
+}
+
+
+void Server::on_save_btn_clicked()
+{
+
+
+}
+
+
+void Server::on_ckb_select_currentTextChanged(const QString &text)
+{
+    showSqlTable(text);
+}
+
+
+void Server::on_add_btn_clicked()
+{
+    model->insertRow(model->rowCount(),QModelIndex());
+}
+
+
+void Server::on_remove_btn_clicked()
+{
+    int currow=ui->tableView->currentIndex().row();
+    model->removeRows(currow,1);
+}
+
+
+void Server::on_revoke_btn_clicked()
+{
+
+}
+
+
+void Server::on_insert_btn_clicked()
+{
+
+    int currow=ui->tableView->currentIndex().row();
+    model->insertRow(ui->tableView->currentIndex().row()+1,QModelIndex());
 }
 

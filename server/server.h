@@ -20,6 +20,7 @@
 #include <QThreadPool>
 #include <QAbstractSocket>
 #include <QMutex>
+#include<QSqlTableModel>
 #include"connectionpool.h"
 #include"clienthandler.h"
 
@@ -46,19 +47,34 @@ private slots:
 
     void on_open_btn_clicked();
 
-    void on_ckb_select_currentIndexChanged(int index);
+    // void on_ckb_select_currentIndexChanged(int index);
 
     void on_sql_btn_clicked();
+
+    void on_save_btn_clicked();
+
+    void on_ckb_select_currentTextChanged(const QString &arg1);
+
+    void on_add_btn_clicked();
+
+    void on_remove_btn_clicked();
+
+    void on_revoke_btn_clicked();
+
+    void on_insert_btn_clicked();
 
 private:
     Ui::Server *ui;
     bool tcpListen();
-    void showTable(const QString &tablename);
+    void showSqlTable(const QString &tablename);
 
+    QJsonDocument jsonDocument;
+    QJsonObject jsonObj;
     QThreadPool *threadPool;//线程池
     QMutex mapMutex; // 互斥量，确保线程安全
     QSqlDatabase db;
     QSqlQuery qry;
+    QSqlTableModel* model;
     QTcpServer *tcp_server;
     int port; //连接端口
     bool listenFlag = false;

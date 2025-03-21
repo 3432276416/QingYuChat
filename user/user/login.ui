@@ -35,7 +35,8 @@
     <string notr="true">QPushButton {
     font: 12pt &quot;Microsoft YaHei UI&quot;;
     background-color: rgb(167, 214, 255); 
-    color: white;; 
+    color: white;
+    border-color:white;
     border-radius: 15px;
 }
 </string>

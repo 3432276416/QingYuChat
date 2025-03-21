@@ -7,8 +7,12 @@ Login::Login(QWidget *parent)
 {
     ui->setupUi(this);
     InitView();
-    hostIP="10.61.108.83";
+    hostIP="127.0.0.1";
     hostPort=6677;
+    QHostAddress localaddress=QHostAddress::LocalHost;
+    socket=new QTcpSocket(this);
+    tcpConnect();
+    connect(socket,SIGNAL(readyRead()),this,SLOT(onReadyRead()));
 }
 
 Login::~Login()
@@ -119,6 +123,12 @@ void Login::setPasswordLineEdit()
     });
 }
 
+void Login::setTimer()
+{
+    // loginTimer=new QTimer(this);
+    connect(loginTimer, &QTimer::timeout, this, &Login::sendLogin);
+}
+
 void Login::setBackGround()
 {
     QIcon icon(":/images/Resources/background/loginBG.png");
@@ -146,6 +156,7 @@ void Login::setVal()
 
 bool Login::tcpConnect()
 {
+    qDebug()<<"尝试连接服务器";
     if(socket->state()!=QAbstractSocket::ConnectedState)
     {
         socket->connectToHost(hostIP,hostPort);
@@ -256,9 +267,130 @@ void Login::loginFail()//登录失败
     }
 }
 
+void Login::onReadyRead()
+{
+    jsonData+=socket->readAll();
+    while(jsonData.endsWith("END"))
+    {
+        jsonData.chop(3);
+        jsonDoc=QJsonDocument::fromJson(jsonData);
+        jsonData.clear(); //读取完清除
+        if(jsonDoc.isNull()){
+            qDebug()<<"解析jsonData错误";
+            return;
+        }
+        //处理解析成功的 JSON 对象
+        jsonObj = jsonDoc.object();
+        qDebug()<<jsonObj["tag"];
+        //根据 "answer" 处理不同的请求
+        if (jsonObj["answer"] == "loginSuccess") {//登录成功
+            loginSuccess();
+        }
+        else if (jsonObj["answer"] == "loginFail") {//登录失败
+            qDebug() << "登录失败";
+            loginFail();
+        }
+        // else if (jsonObj["answer"] == "askforavator") {
+        //     qDebug() << "要发送头像了";
+        //     emit sendAvator();//发送头像请求
+        // }
+        // else if (jsonObj["answer"] == "zhucechenggong") {
+        //     qDebug() << "注册成功了";
+        //     emit zhuCeChengGong(jsonObj["qq_number"].toString());
+        // }
+        // else if (jsonObj["answer"] == "zhuAccountInfo") {
+        //     qDebug() << "注册失败了";
+        //     emit zhuCeShiBai();
+        // }
+        // else if (jsonObj["tag"] == "youravator") {
+        //     qDebug() << "要保存登录成功的头像了";
+        //     saveAvator(jsonObj["avator"].toString());
+        // }
+        // else if (jsonObj["tag"] == "findpassword1_answer") {
+        //     qDebug() << "收到找回密码有没有这个账号了";
+        //     emit findPass1(jsonObj);
+        // }
+        // else if (jsonObj["tag"] == "findpassword2_answer") {
+        //     qDebug() << "收到回发的密保问题结果了";
+        //     emit findPass2(jsonObj);
+        // }
+        // else if (jsonObj["tag"] == "findpassword3_answer") {
+        //     qDebug() << "收到修改密码结果了";
+        //     emit findPass3(jsonObj);
+        // }
+        //清空 jsonData，准备接收下一个数据块
+        jsonData.clear();
+    }
+}
+
+void Login::closeEvent(QCloseEvent *event)//关闭窗口事件
+{
+    if (loginFlag == true) {
+        qDebug() << "登录成功 弹出新窗口";
+        socket->disconnectFromHost();
+        qDebug() << "登录窗口已断开和服务器的连接";
+        //发送登录成功的信号
+        emit loginSuccessSIGNAL(ui->userName_lineEdit->text());
+    } else {
+        //如果没有登录，直接关闭窗口
+        qDebug()<<"正常关闭";
+        socket->disconnectFromHost();
+        event->accept();
+    }
+}
+
+void Login::sendLogin()//发送登录信息
+{
+    ui->login_btn->setText("安全登录");
+    ui->login_btn->setStyleSheet(
+        "QPushButton {"
+        "    font: 12pt 'Microsoft YaHei UI';"
+        "    background-color: rgb(5, 186, 251);"
+        "    color: white;"
+        "    border-radius: 15px;"
+        "}"
+        "QPushButton:hover {"
+        "    background-color: rgba(5, 186, 251, 0.7);"
+        "    color: white;"
+        "    border-radius: 15px;"
+        "}"
+        "QPushButton:pressed {"
+        "    background-color: rgba(0, 123, 255, 0.8);"
+        "    color: rgba(255, 255, 255, 0.9);"
+        "    border-radius: 15px;"
+        "}"
+        );
+    ui->userName_lineEdit->setEnabled(true);
+    ui->password_lineEdit->setEnabled(true);
+    tcpConnect();
+    if (socket->state() != QAbstractSocket::ConnectedState) {
+        Dialog msgBox(this);
+        msgBox.transText("请检查您的网络连接!");
+        msgBox.setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Dialog |Qt::FramelessWindowHint);
+        msgBox.exec();
+        return;
+    }
+    QJsonObject jsonObj;
+    QJsonDocument jsonDoc;
+    jsonObj["tag"] = "login";
+    jsonObj["qq_number"] = ui->userName_lineEdit->text();
+    jsonObj["password"] = ui->password_lineEdit->text();
+    QJsonDocument jsondoc(jsonObj);
+    QByteArray jsonData = jsondoc.toJson() + "END";
+    //发送消息
+    socket->write(jsonData);
+    socket->flush();
+}
+
 
 void Login::on_register_btn_clicked()
 {
     tcpConnect(); //连接服务器
+}
+
+
+void Login::on_login_btn_clicked()
+{
+
 }
 
