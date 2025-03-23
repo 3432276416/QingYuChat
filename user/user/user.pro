@@ -15,17 +15,23 @@ SOURCES += \
     dialog.cpp \
     login.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    register.cpp \
+    verify.cpp
 
 HEADERS += \
     dialog.h \
     login.h \
-    mainwindow.h
+    mainwindow.h \
+    register.h \
+    verify.h
 
 FORMS += \
     dialog.ui \
     login.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    register.ui \
+    verify.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

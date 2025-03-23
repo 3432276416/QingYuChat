@@ -1,0 +1,12 @@
+release/dialog.o
+release/login.o
+release/main.o
+release/mainwindow.o
+release/register.o
+release/verify.o
+release/qrc_res.o
+release/moc_dialog.o
+release/moc_login.o
+release/moc_mainwindow.o
+release/moc_register.o
+release/moc_verify.o

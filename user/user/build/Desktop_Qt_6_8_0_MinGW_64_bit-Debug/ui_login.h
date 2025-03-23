@@ -54,7 +54,8 @@ public:
         login_btn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font: 12pt \"Microsoft YaHei UI\";\n"
 "    background-color: rgb(167, 214, 255); \n"
-"    color: white;; \n"
+"    color: white;\n"
+"    border-color:white;\n"
 "    border-radius: 15px;\n"
 "}\n"
 ""));
